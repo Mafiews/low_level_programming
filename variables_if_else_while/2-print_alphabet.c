@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point
-* Description: 'This function is to display a message using puts'
+* Description: print the alphabet in lowercase followed by a new line
 * Return: Always 0 (Success)
 */
 int main(void)
