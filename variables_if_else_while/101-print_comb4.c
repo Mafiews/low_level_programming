@@ -1,10 +1,10 @@
+#headers
 #include <stdio.h>
 
 /**
 * main - Entry point
 * Description: prints all possible different combinations of three digits,
-* Numbers must be separated by ,
-* followed by a space
+* Numbers must be separated by a comma and followed by a space.
 * The three digits must be different
 * Print only the smallest combination of three digits
 * Numbers should be printed in ascending order, with three digits
