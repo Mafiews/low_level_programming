@@ -1,3 +1,4 @@
+#headers
 #include <stdio.h>
 
 /**
@@ -7,7 +8,6 @@
 * printed in ascending order
 * Return: Always 0 (Success)
 */
-
 
 int main(void)
 {
