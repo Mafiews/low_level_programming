@@ -1,29 +1,29 @@
 /* playing with functions */
 # include <stdio.h>
 # include <string.h>
-#include<unistd.h>
+# include <unistd.h>
 
-void count_char(char* name)
+void count_char(char* world)
 {
-	int i = strlen(name);
-	printf("%s consists of %d characters!\n", name, i);
-	printf("end of count_char");
+	int i = strlen(world);
+	printf("The string \"%s\" consists of %d characters!\n", world, i);
+	printf("End of the count_char function\n");
 	sleep(2);
 }
 
-int return_iq(char* name)
+int determine_iq(char* world)
 {
-	int i = strlen(name);
-	count_char(name);
-	return (i);
-	printf("end of return_char");
+	int i = strlen(world);
+	count_char(world);
+	printf("Done with determine_iq function\n");
 	sleep(2);
+	return (i);
 }
 
 int main(void)
 {
-	int i = return_iq("long string of 27 characters");
-	printf("Einsten has IQ: %d\n", i);
+	int i = determine_iq("test");
+	printf("Einsten has IQ: %d * 10 = %d.\n", i, i*10);
 }
 
 
