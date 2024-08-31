@@ -1,23 +1,28 @@
 /* playing with functions */
 # include <stdio.h>
 # include <string.h>
+#include<unistd.h>
 
-void albert(char* name)
+void count_char(char* name)
 {
 	int i = strlen(name);
 	printf("%s consists of %d characters!\n", name, i);
+	printf("end of count_char");
+	sleep(2);
 }
 
-int einstein(char* name)
+int return_iq(char* name)
 {
 	int i = strlen(name);
-	albert(name);
+	count_char(name);
 	return (i);
+	printf("end of return_char");
+	sleep(2);
 }
 
 int main(void)
 {
-	int i = einstein("brainfood");
+	int i = return_iq("long string of 27 characters");
 	printf("Einsten has IQ: %d\n", i);
 }
 
