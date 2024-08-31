@@ -1,3 +1,28 @@
+/* playing with functions */
+# include <stdio.h>
+# include <string.h>
+
+void albert(char* name)
+{
+	int i = strlen(name);
+	printf("%s consists of %d characters!\n", name, i);
+}
+
+int einstein(char* name)
+{
+	int i = strlen(name);
+	albert(name);
+	return (i);
+}
+
+int main(void)
+{
+	int i = einstein("brainfood");
+	printf("Einsten has IQ: %d\n", i);
+}
+
+
+
 /* #include <stdio.h> */
 /* #include <stdlib.h> */
 /* int main(void){ */
