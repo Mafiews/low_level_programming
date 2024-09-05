@@ -1,30 +1,58 @@
-/* playing with functions */
-# include <stdio.h>
-# include <string.h>
-# include <unistd.h>
+#include <stdio.h>
 
-void count_char(char* world)
-{
-	int i = strlen(world);
-	printf("The string \"%s\" consists of %d characters!\n", world, i);
-	printf("End of the count_char function\n");
-	sleep(2);
-}
+/*function declaration*/
+int max(int, int);
 
-int determine_iq(char* world)
+/* function returning the max between two numbers */ 
+int max(int num1, int num2)
 {
-	int i = strlen(world);
-	count_char(world);
-	printf("Done with determine_iq function\n");
-	sleep(2);
-	return (i);
+   /* local variable declaration */ 
+   int result;
+   
+   if(num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
 }
 
 int main(void)
 {
-	int i = determine_iq("test");
-	printf("Einsten has IQ: %d * 10 = %d.\n", i, i*10);
+   printf("Comparing two numbers using max() function: \n");
+   printf("Which of the two, 75 or 190, is greater than the other? \n" );
+   printf("The answer is: %d\n", max(75, 190));
+    
+   return 0;
 }
+
+/* /\* playing with functions *\/ */
+/* # include <stdio.h> */
+/* # include <string.h> */
+/* # include <unistd.h> */
+
+/* void count_char(char* world) */
+/* { */
+/* 	int i = strlen(world); */
+/* 	printf("The string \"%s\" consists of %d characters!\n", world, i); */
+/* 	printf("End of the count_char function\n"); */
+/* 	sleep(2); */
+/* } */
+
+/* int determine_iq(char* world) */
+/* { */
+/* 	int i = strlen(world); */
+/* 	count_char(world); */
+/* 	printf("Done with determine_iq function\n"); */
+/* 	sleep(2); */
+/* 	return (i); */
+/* } */
+
+/* int main(void) */
+/* { */
+/* 	int i = determine_iq("test"); */
+/* 	printf("Einsten has IQ: %d * 10 = %d.\n", i, i*10); */
+/* } */
 
 
 
