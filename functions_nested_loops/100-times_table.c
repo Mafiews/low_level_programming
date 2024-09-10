@@ -16,6 +16,11 @@ void print_times_table(int n)
 {
 	int i, result;
 
+	if (n < 0 || n > 15)
+	{
+		return;
+	}
+
 	for (i = 0; i <= 10; i++)
 	{
 		result = n * i;
