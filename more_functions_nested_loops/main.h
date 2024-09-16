@@ -11,5 +11,8 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void fizzbuzz(void);
+void print_triangle(int size);
+unsigned long find_prime(unsigned long num);
+void print_number(int n);
 
 #endif /* MAIN_H */
