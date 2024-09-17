@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - addresses of variables
+ * main - printing the size, in bytes, of a pointer
  * Return: Always 0.
  */
 
 int main(void)
 {
-   char c;
-   int n;
+	int *p;
 
-   printf("Address of variable 'c': %p\n", &c);
-   printf("Address of variable 'n': %p\n", &n);
-   return (0);
+	printf("The size of the *p pointer is: %lu bytes.\n", sizeof(p));
+	return (0);
 }
