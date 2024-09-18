@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - accessing elements in an array
+ * main - printing size and address of an array
+ *  In the context of sizeof, the name of the array refers to the array object itself
+ * (composed of all its elements). Thus, sizeof an array
+ * will give you the amount of memory space used by all its elements.
+ *  In the context of &, the name of the array refers to the array object itself
+ * (composed of all its elements). So the address-of the array name
+ * will give you the address of the whole array, which is the same as the address of its first element.
  * Return: Always 0.
  */
 
@@ -9,20 +15,10 @@ int main(void)
 {
 	int a[5];
 
-	a[0] = 98;
-	a[1] = 198;
-	a[2] = 298;
-	a[3] = 398;
-	a[4] = 498;
-	printf("Value of a[0]: %d\n", a[0]);
-	printf("Value of a[1]: %d\n", a[1]);
-	printf("Value of a[2]: %d\n", a[2]);
-	printf("Value of a[3]: %d\n", a[3]);
-	printf("Value of a[4]: %d\n", a[4]);
-	printf("Address of 'a[0]': %p\n", &(a[0]));
-	printf("Address of 'a[1]': %p\n", &(a[1]));
-	printf("Address of 'a[2]': %p\n", &(a[2]));
-	printf("Address of 'a[3]': %p\n", &(a[3]));
-	printf("Address of 'a[4]': %p\n", &(a[4]));
+	printf("Size of the array (memore space used by all elements, here 5x4 bytes): %lu.\n\n", sizeof(a));
+	printf("Printing the array and its address (object itself):\n");
+	printf("- array a: %p;\n", a);
+	printf("- address(&b): %p;\n", &a);
+	printf("The address of the whole array is the same as the address of its first element.");
 	return (0);
 }
