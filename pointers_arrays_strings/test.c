@@ -1,31 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - derefencing pointers
- * The real power of pointers is that they can manipulate
- * values stored at the memory address they point to.
- * This is called dereferencing. To do this, you can use the dereference operator *.
+ * main - accessing elements in an array
  * Return: Always 0.
  */
 
 int main(void)
 {
-	int n;
-	int *p;
+	int a[5];
 
-	n = 98;
-	p = &n;
-
-        printf("Value of 'n': %d.\n", n);
-	printf("Address of 'n': %p.\n", &n);
-	printf("Value of 'p': %p.\n", p);
-
-	printf("Assigning '420' to *p.\n");
-	*p = 420;
-	
-	printf("Value of 'n': %d.\n", n);
-	printf("Address of 'n': %p\n", &n);
-	printf("Value of 'p': %p\n", p);
-
+	a[0] = 98;
+	a[1] = 198;
+	a[2] = 298;
+	a[3] = 398;
+	a[4] = 498;
+	printf("Value of a[0]: %d\n", a[0]);
+	printf("Value of a[1]: %d\n", a[1]);
+	printf("Value of a[2]: %d\n", a[2]);
+	printf("Value of a[3]: %d\n", a[3]);
+	printf("Value of a[4]: %d\n", a[4]);
+	printf("Address of 'a[0]': %p\n", &(a[0]));
+	printf("Address of 'a[1]': %p\n", &(a[1]));
+	printf("Address of 'a[2]': %p\n", &(a[2]));
+	printf("Address of 'a[3]': %p\n", &(a[3]));
+	printf("Address of 'a[4]': %p\n", &(a[4]));
 	return (0);
 }
