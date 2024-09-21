@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - function that takes a pointer to an int
  * as parameter and updates the value it points to to 98.
- * @*n: pointer param which value to update
+ * @n: pointer param which value to update
  * Return: /
  */
 
@@ -15,7 +15,7 @@ void reset_to_98(int *n)
 
 
 /**
- * main - check the code 
+ * main - check the code
  * Return: Always 0.
  */
 
